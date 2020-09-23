@@ -89,6 +89,8 @@ h1 {
 .my_box>ul {
     list-style-type: circle;
     list-style-position: inside;
+    text-align: center;
+    padding: 0;
 }
 
 #about {
