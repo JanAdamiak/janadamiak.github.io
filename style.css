@@ -229,12 +229,12 @@ footer {
         font-size: 28px;
         bottom: 30%;
         position: absolute;
-        left: 20%;
+        left: 8%;
     }
     
     .buttons {
         position: absolute;
         bottom: 18%;
-        left: 8%;
+        left: 19%;
     }
 }
