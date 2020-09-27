@@ -2,11 +2,12 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    margin 0;
     font-size: 20px;
     line-height: 1.5;
     background-color: gray;
@@ -89,8 +90,14 @@ h1 {
 .my_box>ul {
     list-style-type: circle;
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
+    width: 50%;
+    margin: auto;
     padding: 0;
+}
+
+#info>ul {
+    width: 100%;
 }
 
 #about {
@@ -103,13 +110,6 @@ h1 {
 
 .my_box h1 {
     margin-bottom: 10px;
-}
-
-#info ul {
-    font-size: 28px;
-    bottom: 30%;
-    position: absolute;
-    left: 30%;
 }
 
 .buttons {
@@ -215,28 +215,12 @@ footer {
     .row {
         grid-template-columns: auto;
     }
+    
     .my_box {
         width: 100%;
     }
 
     h1 {
         font-size: 28px;
-    }
-
-    body {
-        font-size: 18px;
-    }
-
-    #info ul {
-        font-size: 28px;
-        bottom: 30%;
-        position: absolute;
-        left: 8%;
-    }
-    
-    .buttons {
-        position: absolute;
-        bottom: 18%;
-        left: 19%;
     }
 }
