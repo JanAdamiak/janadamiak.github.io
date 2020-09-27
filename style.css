@@ -8,13 +8,9 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.5;
     background-color: gray;
-}
-
-h4 {
-    font-size: 22px;
 }
 
 .btn-inactive {
@@ -51,14 +47,9 @@ h4 {
     border-radius: 16px 0px 16px 0px;
 }
 
-h1 {
-    font-weight: 400;
-    font-size: 44px;
-}
-
 .container {
     margin: 0 auto;
-    width: 1300px;
+    width: 1440px;
     max-width: 100%;
 }
 
@@ -69,17 +60,18 @@ h1 {
 
 .my_box {
     position: relative;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    height: 700px;
-    max-width: 650px;
+    height: 800px;
+    max-width: 720px;
     text-align: center;
-    padding: 64px 64px 20px;
+    padding: 4rem 4rem 0;
     border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 } 
 
 .my_box>* {
-    margin-top: 0 auto;
+    margin: 0 auto;
     color: white;
 }
 
@@ -88,24 +80,14 @@ h1 {
 }
 
 .my_box>ul {
-    list-style-type: circle;
-    list-style-position: inside;
+    padding: 4rem 0;
+    display: table;
     text-align: left;
-    width: 50%;
-    margin: auto;
-    padding: 0;
-}
-
-#info>ul {
-    width: 100%;
+    margin: 0 auto;
 }
 
 #about {
     background-color: teal;
-}
-
-#info {
-    background-color: black;
 }
 
 .my_box h1 {
@@ -113,18 +95,11 @@ h1 {
 }
 
 .buttons {
-    position: absolute;
-    bottom: 8%;
-    left: 34%;
+    align-self: flex-end;
 }
 
 .buttons>* {
  margin: 0 4px;
-}
-
-#info a {
-    color: white;
-    text-decoration: none;
 }
 
 #project1 {
@@ -211,16 +186,27 @@ footer {
 
 
 /* For mobile phones: */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .row {
         grid-template-columns: auto;
     }
     
     .my_box {
         width: 100%;
+        height: 700px;
+        padding: 2rem 4rem 0px;
+    }
+}
+
+
+
+/* For mobile phones: */
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 1.875rem;
     }
 
-    h1 {
-        font-size: 28px;
+    body {
+        font-size: 1.375rem;
     }
 }
